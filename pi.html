@@ -1,0 +1,175 @@
+					
+
+<!DOCTYPE html>
+<html lang="it" class="pi-lg pi-firefox pi-domain pi-domain-posteit">
+	<head>
+		<title>Accedi o Registrati</title>
+		
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, user-scalable=0">
+		
+		<!-- Stili slick -->
+		<link type="text/css" rel="stylesheet" href="/assets-da/vendor/accessible-slick/css/slick.min.css">
+		<link type="text/css" rel="stylesheet" href="/assets-da/vendor/accessible-slick/css/accessible-slick-theme.min.css">
+		
+		<!-- Stili base-->
+		<link type="text/css" rel="stylesheet" href="/assets-da/vendor/bootstrap/css/bootstrap.min.css">
+		<!-- <link type="text/css" rel="stylesheet" href="/assets-da/core/css/core.min.css"> -->
+		<link type="text/css" rel="stylesheet" href="/risorse_dt_ext/stili/core.min.custom.css">
+		<link type="text/css" rel="stylesheet" href="/risorse_dt_ext/stili/custom.css">
+		
+		<script type="text/javascript" src="/assets-da/vendor/jquery/jquery.min.js"></script>
+		
+		<!-- Tutti gli altri Js -->
+		<script src="/assets-da/vendor/bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- vendors di default -->
+		
+		<script src="/assets-da/vendor/accessible-slick/js/slick.min.js"></script>
+		
+		<script>
+			$(function(){
+				$('#checkbox-remember').on('change',function(){
+					if($(this).is(':checked')){
+						$('#rememberme').val() == "on";
+					}
+					else{
+						$('#rememberme').val() == "";
+					}
+				})
+				$(window).resize();
+			});
+		</script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('#checkbox-remember').on('change', function(){
+					if($(this).is(':checked')){
+						$('#rememberme').val("on"); 
+					}
+					else{
+						$('#rememberme').val(""); 
+					}
+				});
+				
+				$('#password-trigger').on('mousedown touchstart',function(){
+					$('#password').attr('type','text');
+				}).on('mouseup touchend',function(){
+					$('#password').attr('type','password');
+				}).on('mouseleave',function(){
+					$('#password').attr('type','password');
+				});
+			});
+			
+			function deleteRememberMe() {
+				$('#username').val("");
+				$('#firstname').text("");
+				$('.rememberme_hidden').show();
+				$('.rememberme_shown').hide();
+				$('#rememberme').val(""); 
+			}
+			
+			
+		</script>
+		
+		
+		<script src="https://assets.adobedtm.com/launch-EN592261e36dc14b10a9936e854a4b30db.min.js" async></script>
+		
+		
+		
+		
+		
+		
+
+   
+    
+
+<script type="text/javascript" src="/jod-fcc/posteID/x-jod-poste-id.js"></script>
+
+
+	
+
+
+
+
+	
+<script type="text/javascript" src="/jod-fcc/resources/portal/js-rsa-2/hashtable.js" ></script>
+<script type="text/javascript" src="/jod-fcc/resources/portal/js-rsa-2/rsa.js" ></script>
+<script type="text/javascript" src="/jod-fcc/resources/portal/js-rsa-2/pbase-css-poste.js" ></script>
+
+
+
+
+<script type="text/javascript" src="/jod-fcc/resources/portal/js-polling/jdpolling.js" ></script>
+<script type="text/javascript">
+	const appsmodalimgJs = new Map();
+	
+	
+			appsmodalimgJs.set("ALL", "/risorse_dt_ext/icone/small-modal-ico-pp-pt.png");
+	
+			appsmodalimgJs.set("app-bpol", "/risorse_dt_ext/icone/small-modal-ico-bp.png");
+	
+			appsmodalimgJs.set("app-up", "/risorse_dt_ext/icone/small-modal-ico-pt.png");
+	
+			appsmodalimgJs.set("app-up,app-bpol", "/risorse_dt_ext/icone/small-modal-ico-bp-pt.png");
+	
+			appsmodalimgJs.set("app-sca-demo", "/risorse_dt_ext/icone/small-modal-ico-bp.png");
+	
+			appsmodalimgJs.set("app-bpol,app-ppay", "/risorse_dt_ext/icone/small-modal-ico-bp-pp.png");
+	
+			appsmodalimgJs.set("app-quaresima", "/risorse_dt_ext/icone/small-modal-ico-pt.png");
+	
+			appsmodalimgJs.set("app-ppay,app-up", "/risorse_dt_ext/icone/small-modal-ico-pp-pt.png");
+	
+			appsmodalimgJs.set("app-up,app-ppay", "/risorse_dt_ext/icone/small-modal-ico-pp-pt.png");
+	
+			appsmodalimgJs.set("app-bpol,app-up", "/risorse_dt_ext/icone/small-modal-ico-bp-pt.png");
+	
+			appsmodalimgJs.set("app-up,app-bpol,app-ppay", "/risorse_dt_ext/icone/small-modal-ico-bp-pp-pt.png");
+	
+			appsmodalimgJs.set("app-ppay", "/risorse_dt_ext/icone/small-modal-ico-pp.png");
+	
+			appsmodalimgJs.set("app-bpol,app-ppay,app-up", "/risorse_dt_ext/icone/small-modal-ico-bp-pp-pt.png");
+	
+</script>
+
+
+
+<script type="text/javascript">
+function logintest(actForm) {
+	try {
+		posteSubmit(actForm);
+	} 
+	catch (e) {};
+	return true;
+}
+
+var organizationmessage = "Poste it";
+var federated = true;
+var issuer = "onewebcommon-web";
+var cancelurl = "/jod-fcc/idplogin?cancel=1";
+var sp_link = "";
+var sp_link_label = "";
+var sp_subtitle = "";
+var sp_posteid = true;
+var sp_business = true;
+</script>
+
+		<script type="text/javascript">
+		$(function(){
+			var isRememberMe = false
+			if(isRememberMe){
+				$('#username').val("");
+				$('#firstname').text("");
+				$('.rememberme_hidden').hide();
+				$('.rememberme_shown').show();
+				$('#rememberme').val("on"); 
+			}
+		})
+		</script>
+	</head>
+	<body class="pattern-simple-01" style="overflow: inherit;">
+		
+	
